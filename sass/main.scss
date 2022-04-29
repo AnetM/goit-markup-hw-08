@@ -1,0 +1,31 @@
+@import "./utils/variables";
+@import "./components/common";
+@import "./components/hero";
+@import "./components/advantages";
+@import "./components/what-we-do";
+@import "./components/employees";
+@import "./components/clients";
+@import "./components/page-header";
+@import "./components/footer";
+
+%list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-bottom: 94px;
+  padding-left: 0px;
+  margin: 0;
+}
+
+%link.current::after {
+  content: "";
+  display: inline-block;
+  width: 48px;
+  height: 4px;
+  background-image: url(../img/line.svg);
+  background-size: contain;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}

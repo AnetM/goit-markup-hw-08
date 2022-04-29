@@ -1,0 +1,27 @@
+.whatwedo-list {
+  @extend %list;
+}
+
+.whatwedo-list_item {
+  position: relative;
+  width: 370px;
+  height: 294px;
+}
+
+.whatwedo-list_title {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: auto;
+  text-align: center;
+  padding-top: 27px;
+  color: $hero-adress-title-color;
+  background-color: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  width: inherit;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+}

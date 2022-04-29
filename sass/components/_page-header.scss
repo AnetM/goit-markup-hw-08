@@ -1,0 +1,133 @@
+.container.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+
+    margin-right: 93px;
+
+    &-half-one {
+        color: $accent-color;
+    }
+
+    &-half-two {
+        color: #000;
+    }
+}
+
+.nav-link-box {
+    height: 80px;
+    line-height: 80px;
+
+    & .relative {
+        position: relative;
+    }
+}
+
+.container-main-nav {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav {
+    display: flex;
+    width: 294px;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-nav .link {
+    color: $title-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    &:hover, &:focus {
+        color: $accent-color;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.link.current {
+    position: relative;
+    display: inline-block;
+    height: 47.5px;
+    color: $accent-color;
+
+    &::after {
+        @extend %link.current::after;
+    }
+}
+
+.auth-nav.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone-icon,
+.mail-icon {
+    margin-right: 10px;
+    fill: #757575;
+
+    &:hover, &:focus {
+        fill: $accent-color;
+        cursor: pointer;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.mail-box,
+.phone-box {
+    display: flex;
+    align-items: center;
+}
+
+.phone-box:hover .phone-icon {
+    fill: $accent-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mail-box {
+    margin-right: 30px;
+
+    &:hover .mail-icon {
+        fill: $accent-color;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.mail,
+.tel {
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    &:hover, &:focus {
+        color: $accent-color;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
