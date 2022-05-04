@@ -29,7 +29,12 @@
   background-color: red;
 
   @media screen and (min-width: 480px) {
-    // @extend %list;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-bottom: 94px;
+    padding-left: 0px;
+    margin: 0;
 
     &_item {
       width: 270px;

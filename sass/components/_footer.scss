@@ -1,42 +1,44 @@
 footer {
-    background-color: #2f303a;
+  background-color: #2f303a;
 
-    & .logo {
-        display: inline-block;
-        margin-bottom: 20px;
-    }
+  & .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
 
-    & .container {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+  & .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .container.footer {
+  @media screen and (min-width: 480px) {
     display: flex;
     align-items: baseline;
+  }
 }
 
 .footer .logo-half-two {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .adress {
-    color: $hero-adress-title-color;
-    font-style: normal;
-    font-weight: 400;
+  color: $hero-adress-title-color;
+  font-style: normal;
+  font-weight: 400;
 
-    & a {
-        color: rgba(255, 255, 255, 0.6);
-        font-style: normal;
-        text-decoration: none;
-    }
+  & a {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    text-decoration: none;
+  }
 }
 
 .join-list-container {
-    width: 206px;
+  width: 206px;
 
-    & .title {
+  & .title {
     color: $hero-adress-title-color;
     text-transform: uppercase;
     font-size: 14px;
@@ -44,106 +46,108 @@ footer {
     letter-spacing: 0.03em;
     margin-top: 0;
     margin-bottom: 20px;
-    }
+  }
 }
 
 .join-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 
-    padding: 0;
+  padding: 0;
 }
 
 .join-list-box {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 
-    &:hover {
+  &:hover {
     width: 44px;
     height: 44px;
     background-color: $accent-color;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  }
 }
 
 .join-list-icon {
-    margin: auto;
-    fill: $icon-fill-color;
+  margin: auto;
+  fill: $icon-fill-color;
 }
 
 .adress-container {
-    margin-right: 70px;
+  margin-right: 70px;
 }
 
 .subscribe-mailing {
-    color: $hero-adress-title-color;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    font-weight: 700;
-    margin-bottom: 20px;
+  color: $hero-adress-title-color;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .form {
+  @media screen and (min-width: 480px) {
     display: flex;
     justify-content: space-between;
     width: 570px;
     height: 86px;
     margin-left: auto;
     margin-right: auto;
+  }
 }
 
 .form-field-submit {
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 
-    & .submit-btn {
-        width: 200px;
-        height: 50px;
-        border-radius: 4px;
-        background-color: $accent-color;
-        border: transparent;
-        
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
-        letter-spacing: 0.06em;
-        color: $hero-adress-title-color;
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-    }
+  & .submit-btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: $accent-color;
+    border: transparent;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $hero-adress-title-color;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
 }
 
 .form-field-mail {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer input[type="email"] {
-    width: 358px;
-    height: 50px;
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    margin-top: 0%;
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  margin-top: 0%;
 }
 
 .form-field-mail input[placeholder="E-mail"] {
-    font-size: 16px;
-    line-height: 1.25;
-    padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 16px;
 }
 
 .icon-send {
-    margin-left: 10px;
+  margin-left: 10px;
 }

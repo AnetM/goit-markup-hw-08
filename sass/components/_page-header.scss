@@ -1,9 +1,9 @@
 .container.nav {
   background-color: red;
-  width: 480px;
+  width: 479px;
 
   @media screen and (min-width: 480px) {
-    width: 480px;
+    max-width: 768px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,9 +34,14 @@
 .nav-link-box {
   height: 80px;
   line-height: 80px;
+  display: none;
 
   & .relative {
     position: relative;
+  }
+
+  @media screen and (min-width: 480px) {
+    display: flex;
   }
 }
 
@@ -87,9 +92,13 @@
 }
 
 .auth-nav.list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: none;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .phone-icon,
