@@ -20,10 +20,9 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 480px;
   padding-left: 20px;
   padding-right: 20px;
-  outline: 2px solid tomato;
 }
 
 .section.hero {
@@ -334,25 +333,29 @@ body {
   margin: auto;
 }
 
-.feature-list_item {
-  width: 270px;
+.feature-list {
+  background-color: red;
 }
 
-.feature-list .title {
-  color: #212121;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  padding-top: 0px;
-  margin-bottom: 10px;
-  margin-top: 30px;
-}
-
-.feature-list .text {
-  color: #757575;
-  margin-bottom: 0;
+@media screen and (min-width: 480px) {
+  .feature-list_item {
+    width: 270px;
+  }
+  .feature-list .title {
+    color: #212121;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 0px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .feature-list .text {
+    color: #757575;
+    margin-bottom: 0;
+  }
 }
 
 .whatwedo-list_item {
@@ -486,16 +489,24 @@ body {
 }
 
 .container.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 80px;
+  background-color: red;
+  width: 480px;
+}
+
+@media screen and (min-width: 480px) {
+  .container.nav {
+    width: 480px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80px;
+  }
 }
 
 .logo {
@@ -825,7 +836,7 @@ footer .container {
   margin-left: 10px;
 }
 
-.feature-list, .whatwedo-list, .employees-list {
+.whatwedo-list, .employees-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
