@@ -10,28 +10,48 @@
 }
 
 .container.features {
-  padding-top: 94px;
+  padding-top: 60px;
+  @media screen and (min-width: 480px) {
+    padding-top: 94px;
+  }
 }
 
 .list-item {
-  display: flex;
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
   background-color: $icon-background-color;
+  display: flex;
+  border-radius: 4px;
+  height: 120px;
+  // padding: 0;
+  // margin: 0;
 
   & .icon {
     margin: auto;
+  }
+  @media screen and (min-width: 480px) {
+    width: 270px;
+    height: 120px;
   }
 }
 
 .feature-list {
   background-color: red;
+  list-style: none;
+
+  & .title {
+    color: $title-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+    text-transform: uppercase;
+    text-align: center;
+  }
 
   @media screen and (min-width: 480px) {
     display: flex;
     justify-content: space-between;
-    list-style: none;
+
     padding-bottom: 94px;
     padding-left: 0px;
     margin: 0;
@@ -41,14 +61,6 @@
     }
 
     & .title {
-      color: $title-color;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.03em;
-
-      text-transform: uppercase;
-
       padding-top: 0px;
       margin-bottom: 10px;
       margin-top: 30px;
