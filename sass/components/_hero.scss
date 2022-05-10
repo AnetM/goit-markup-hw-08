@@ -1,10 +1,10 @@
 .section.hero {
-  width: 480px;
+  max-width: 480px;
   background-color: #c4c4c4;
   // max-width: 1600px;
   height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  //   margin-left: auto;
+  //   margin-right: auto;
   outline: 1px solid black;
   background-image: linear-gradient(
       to right,
