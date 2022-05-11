@@ -645,6 +645,8 @@ body {
 
 .menu-container {
   background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
   padding: 20px;
   text-align: center;
   font-size: 20px;
@@ -660,7 +662,9 @@ body {
   }
   .menu-container.is-open {
     display: block;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -678,18 +682,12 @@ body {
   }
 }
 
-.navigation,
-.contacts {
-  height: 50px;
-  width: 140px;
+.navigation_list {
+  list-style: none;
 }
 
-.navigation {
-  outline: 1px solid teal;
-}
-
-.contacts {
-  outline: 1px solid orange;
+.contacts_list {
+  list-style: none;
 }
 
 .logo {
