@@ -27,22 +27,29 @@
             >
           </a>
           <button
-            type="button"
-            class="menu-button"
-            aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-button
+           class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
           >
             <svg
               width="40"
               height="40"
               aria-label="Переключатель мобильного меню"
             >
-              <use class="icon-cross" href="./img/symbol-defs.svg#cross"></use>
               <use class="icon-menu" href="./img/symbol-defs.svg#menu"></use>
             </svg>
           </button>
-           <div class="menu-container" id="menu-container" data-menu>
+           <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+               <use class="icon-cross" href="./img/symbol-defs.svg#cross"></use>
+            </svg>
+           
+          </button>
             <div class="navigation">
               <ul class="navigation_list">
                 <li>Студия</li>
@@ -498,5 +505,12 @@
     </footer>
     <script src="./modal.js"></script>
     <script src="./js/menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
