@@ -636,6 +636,11 @@ body {
   outline: none;
 }
 
+.menu-toggle .icon-menu:hover,
+.menu-toggle .icon-cross:hover {
+  fill: #2196f3;
+}
+
 .menu-container {
   position: fixed;
   top: 0;

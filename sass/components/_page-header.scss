@@ -43,9 +43,10 @@
   outline: none;
 }
 
-// .menu-toggle .icon-cross {
-//   display: none;
-// }
+.menu-toggle .icon-menu:hover,
+.menu-toggle .icon-cross:hover {
+  fill: $accent-color;
+}
 
 // .menu-toggle.is-open .icon-cross {
 //   display: block;
