@@ -97,6 +97,7 @@
   &.is-open {
     opacity: 1;
     transform: translateX(0);
+    padding-left: 40px;
   }
 }
 
@@ -114,12 +115,9 @@
 //   }
 // }
 
-.navigation,
-.contacts {
-}
-
 .navigation {
   &_list {
+    padding-left: 0;
     list-style: none;
     font-weight: 500;
     font-size: 40px;
@@ -140,8 +138,51 @@
 
 .contacts {
   &_list {
+    padding-left: 0;
     list-style: none;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
   }
+
+  &_phone {
+    color: $accent-color;
+    margin-bottom: 32px;
+  }
+}
+
+.social_list {
+  padding-left: 0;
+  color: $accent-color;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.social_item {
+  display: flex;
+  align-items: center;
+}
+
+.social_item:not(:last-child):after {
+  content: "";
+  display: inline-block;
+
+  background-image: url(/img/mediator.svg);
+  width: 1px;
+  height: 22px;
+  background-size: contain;
+  margin-left: 10px;
+  margin-right: 10px;
+  // border-radius: 2px;
+  // position: absolute;
+  // left: 0;
+  // bottom: 0;
 }
 
 .logo {
