@@ -48,6 +48,14 @@
   fill: $accent-color;
 }
 
+.icon-cross:hover {
+  fill: $accent-color;
+}
+
+.toggle-icon:hover {
+  fill: $accent-color;
+}
+
 // .menu-toggle.is-open .icon-cross {
 //   display: block;
 // }
@@ -82,12 +90,17 @@
 
 .menu-container {
   opacity: 0;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding-left: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   background-color: $background-color;
   z-index: 999;
 
@@ -118,6 +131,7 @@
 .navigation {
   &_list {
     padding-left: 0;
+    margin: 0;
     list-style: none;
     font-weight: 500;
     font-size: 40px;
@@ -150,6 +164,13 @@
     color: $accent-color;
     margin-bottom: 32px;
   }
+
+  &_mail {
+    font-size: 24px;
+    line-height: 1.16px;
+
+    color: $primary-text-color;
+  }
 }
 
 .social_list {
@@ -162,6 +183,7 @@
   list-style: none;
   display: flex;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .social_item {

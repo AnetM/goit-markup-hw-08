@@ -686,14 +686,34 @@ body {
   fill: #2196f3;
 }
 
+.icon-cross:hover {
+  fill: #2196f3;
+}
+
+.toggle-icon:hover {
+  fill: #2196f3;
+}
+
 .menu-container {
   opacity: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding-left: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   background-color: #ffffff;
   z-index: 999;
   -webkit-transform: translateX(100%);
@@ -720,6 +740,7 @@ body {
 
 .navigation_list {
   padding-left: 0;
+  margin: 0;
   list-style: none;
   font-weight: 500;
   font-size: 40px;
@@ -749,6 +770,12 @@ body {
   margin-bottom: 32px;
 }
 
+.contacts_mail {
+  font-size: 24px;
+  line-height: 1.16px;
+  color: #757575;
+}
+
 .social_list {
   padding-left: 0;
   color: #2196f3;
@@ -763,6 +790,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 0;
 }
 
 .social_item {
