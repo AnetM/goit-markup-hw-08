@@ -562,6 +562,10 @@ body {
   }
 }
 
+.employee_photo {
+  width: calc(100% - 2 * 15px);
+}
+
 .employee-links {
   display: -webkit-box;
   display: -ms-flexbox;

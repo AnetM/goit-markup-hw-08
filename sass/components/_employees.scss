@@ -33,6 +33,10 @@
   }
 }
 
+.employee_photo {
+  width: calc(100% - 2 * 15px);
+}
+
 .employee-links {
   display: flex;
   list-style: none;
@@ -40,8 +44,6 @@
   justify-content: center;
   padding-left: 0;
 }
-
-
 
 .link-box {
   display: flex;
