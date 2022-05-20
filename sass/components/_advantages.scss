@@ -50,6 +50,14 @@
     text-align: center;
   }
 
+  &:nth-last-child(1) .text {
+    margin: 0;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+
   @media screen and (min-width: 480px) {
     display: flex;
     justify-content: space-between;

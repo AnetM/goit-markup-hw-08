@@ -1,3 +1,11 @@
+.section.whatwedo {
+  display: none;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+  }
+}
+
 .whatwedo-list {
   list-style: none;
   padding-left: 0;

@@ -429,6 +429,14 @@ body {
   text-align: center;
 }
 
+.feature-list:nth-last-child(1) .text {
+  margin: 0;
+}
+
+.feature-list:last-child {
+  margin: 0;
+}
+
 @media screen and (min-width: 480px) {
   .feature-list {
     display: -webkit-box;
@@ -452,6 +460,18 @@ body {
   .feature-list .text {
     color: #757575;
     margin-bottom: 0;
+  }
+}
+
+.section.whatwedo {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .section.whatwedo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
