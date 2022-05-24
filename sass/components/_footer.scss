@@ -4,15 +4,26 @@ footer {
   & .logo {
     display: inline-block;
     margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   & .container {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  & .mail,
+  & .tel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .container.footer {
+  text-align: center;
   @media screen and (min-width: 480px) {
     display: flex;
     align-items: baseline;
@@ -24,6 +35,7 @@ footer {
 }
 
 .adress {
+  margin-bottom: 8px;
   color: $hero-adress-title-color;
   font-style: normal;
   font-weight: 400;
@@ -35,26 +47,58 @@ footer {
   }
 }
 
+.adress.auth {
+  @media screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+
+    & .mail {
+      margin-bottom: 8px;
+    }
+  }
+}
+
 .join-list-container {
-  width: 206px;
+  color: $hero-adress-title-color;
+  text-transform: uppercase;
+  margin-bottom: 60px;
 
   & .title {
-    color: $hero-adress-title-color;
-    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    margin-top: 0;
-    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 206px;
+
+    & .title {
+      color: $hero-adress-title-color;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+    }
   }
 }
 
 .join-list {
-  list-style: none;
   display: flex;
+  max-width: 206px;
+  padding-left: 0;
+  padding-right: 0;
   justify-content: space-between;
+  margin: auto;
+  @media screen and (min-width: 768px) {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
 
-  padding: 0;
+    padding: 0;
+  }
 }
 
 .join-list-box {
@@ -80,7 +124,9 @@ footer {
 }
 
 .adress-container {
-  margin-right: 70px;
+  @media screen and (min-width: 768px) {
+    margin-right: 70px;
+  }
 }
 
 .subscribe-mailing {
@@ -94,7 +140,7 @@ footer {
 }
 
 .form {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     width: 570px;
@@ -106,7 +152,7 @@ footer {
 
 .form-field-submit {
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
 
   & .submit-btn {
     width: 200px;
@@ -126,6 +172,10 @@ footer {
     justify-content: center;
     cursor: pointer;
   }
+
+  @media screen and (min-width: 768px) {
+    align-items: flex-end;
+  }
 }
 
 .form-field-mail {
@@ -134,12 +184,18 @@ footer {
 }
 
 .footer input[type="email"] {
-  width: 358px;
-  height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  margin-top: 0%;
+  height: 50px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 358px;
+    height: 50px;
+  }
+
+  // margin-top: 0%;
 }
 
 .form-field-mail input[placeholder="E-mail"] {
