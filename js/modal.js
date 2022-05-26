@@ -10,7 +10,7 @@
 
       refs.backdrop.addEventListener("click", logBackdropClick);
 
-      function toggleModal() {
+    function toggleModal() {
         refs.backdrop.classList.toggle("is-hidden");
       }
 
