@@ -31,6 +31,11 @@
   }
 
   @media screen and (min-width: 480px) {
+    width: calc((100% - 2 * 15px) / 3);
+    height: 92px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
     width: 170px;
     height: 92px;
     justify-content: center;

@@ -19,6 +19,19 @@
 
   @media screen and (min-width: 480px) {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 94px;
+    padding-left: 0px;
+    margin: 0;
+
+    & .text {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
     justify-content: space-between;
     padding-bottom: 94px;
     padding-left: 0px;
@@ -47,7 +60,7 @@
   }
   @media screen and (min-width: 480px) {
     // width: 270px;
-    width: calc(100% - 2 * 15px);
+    width: calc((100% - 2 * 15px) / 2);
   }
 }
 
