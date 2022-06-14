@@ -1,5 +1,4 @@
 .section.hero {
-  max-width: 480px;
   height: 400px;
   background-image: linear-gradient(
       to right,
@@ -20,11 +19,11 @@
       ),
       url("/img/header_img@2x.jpg");
   }
+
   @media screen and (min-width: 480px) {
-    max-width: 480px;
     background-color: #c4c4c4;
     // max-width: 1600px;
-    height: 600px;
+
     //   margin-left: auto;
     //   margin-right: auto;
     outline: 1px solid black;
@@ -33,7 +32,21 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../img/bgimage.jpg);
+      url(/img/header_img_tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/img/header_img_tablet@2x.jpg");
+    }
   }
 }
 
@@ -50,6 +63,10 @@
   padding-top: 118px;
 
   @media screen and (min-width: 480px) {
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 768px) {
     color: $hero-adress-title-color;
     font-weight: 900;
     font-size: 44px;
@@ -296,10 +313,13 @@
   &-wrapper {
     text-align: center;
   }
+
   @media screen and (min-width: 480px) {
-    color: #ffffff;
+    margin-bottom: 118px;
+  }
+
+  @media screen and (min-width: 768px) {
     background-color: $accent-color;
-    cursor: pointer;
 
     font-weight: 700;
     font-size: 16px;
