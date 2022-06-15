@@ -13,6 +13,10 @@
     align-items: center;
     height: 80px;
   }
+
+  @media screen and (min-width: 768px) {
+    max-width: max-content;
+  }
 }
 
 // .menu-button {
@@ -230,6 +234,10 @@
   @media screen and (min-width: 480px) {
     margin-right: 0;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 93px;
+  }
 }
 
 .nav-link-box {
@@ -274,6 +282,12 @@
   text-decoration: none;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    &.list {
+      margin-right: 305px;
+    }
+  }
 }
 
 .site-nav .link {
@@ -313,6 +327,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
