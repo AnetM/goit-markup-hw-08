@@ -160,6 +160,12 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal {
     max-height: 581px;
@@ -290,6 +296,12 @@ body {
 
 .button.send:hover {
   background-color: #188ce8;
+}
+
+@media screen and (min-width: 480px) {
+  .button.send {
+    margin-top: 0;
+  }
 }
 
 .close-btn {
@@ -484,6 +496,10 @@ body {
 
 .feature-list:nth-last-child(1) .text {
   margin: 0;
+}
+
+.feature-list_item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .feature-list:last-child {
@@ -779,7 +795,7 @@ body {
   margin-bottom: 0;
 }
 
-.client-box:hover {
+.client-box:hover, .client-box:focus {
   cursor: pointer;
   border: 1px solid #2196f3;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -792,7 +808,8 @@ body {
   fill: #afb1b8;
 }
 
-.client-box:hover .icon {
+.client-box:hover .icon,
+.client-box:focus .icon {
   fill: #2196f3;
   cursor: pointer;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

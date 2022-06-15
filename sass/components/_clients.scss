@@ -12,7 +12,8 @@
     margin-bottom: 0;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     cursor: pointer;
     border: 1px solid $accent-color;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -24,7 +25,8 @@
     fill: #afb1b8;
   }
 
-  &:hover .icon {
+  &:hover .icon,
+  &:focus .icon {
     fill: $accent-color;
     cursor: pointer;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

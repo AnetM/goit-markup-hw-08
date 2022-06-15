@@ -59,6 +59,10 @@
     margin: 0;
   }
 
+  &_item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   &:last-child {
     margin: 0;
   }

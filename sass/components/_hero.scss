@@ -120,6 +120,11 @@
     text-align: center;
   }
 
+  @media screen and (min-width: 480px) {
+    // width: calc(100% - 2 * 159px);
+    width: 450px;
+  }
+
   @media screen and (min-width: 768px) {
     max-height: 581px;
     min-width: 528px;
@@ -208,6 +213,10 @@
 
   &:hover {
     background-color: #188ce8;
+  }
+
+  @media screen and (min-width: 480px) {
+    margin-top: 0;
   }
 }
 
