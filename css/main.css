@@ -1248,19 +1248,22 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mail-box {
-  margin-bottom: 10px;
-}
-
 .mail-box:hover .mail-icon {
   fill: #2196f3;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 480px) {
+  .mail-box {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .mail-box {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
