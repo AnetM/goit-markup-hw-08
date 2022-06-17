@@ -37,15 +37,23 @@ footer {
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: baseline;
+    padding-left: 215px;
+    padding-right: 215px;
   }
 }
 
-@media screen and (min-width: 480px) {
-  .footer_part {
+.footer_part {
+  @media screen and (min-width: 480px) {
     display: flex;
     justify-content: space-between;
     margin-left: 80px;
     margin-right: 80px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+    align-items: baseline;
   }
 }
 
@@ -75,7 +83,8 @@ footer {
     margin-bottom: 8px;
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
 }
 
@@ -101,6 +110,7 @@ footer {
       font-size: 14px;
       line-height: 1.14;
       letter-spacing: 0.03em;
+      text-align: start;
     }
   }
 }
@@ -146,12 +156,15 @@ footer {
 .adress-container {
   @media screen and (min-width: 768px) {
     margin-right: 70px;
+    text-align: start;
+    width: 231px;
   }
 }
 
 .subscribe-mailing {
   color: $hero-adress-title-color;
   text-transform: uppercase;
+  text-align: start;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -166,7 +179,7 @@ footer {
     width: 570px;
     height: 86px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 0;
   }
 }
 
@@ -218,6 +231,9 @@ footer {
   @media screen and (min-width: 768px) {
     width: 358px;
     height: 50px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   // margin-top: 0%;

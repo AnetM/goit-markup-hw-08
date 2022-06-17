@@ -44,6 +44,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
+    max-width: 1600px;
     padding-left: 215px;
     padding-right: 215px;
     padding-bottom: 94px;
@@ -631,6 +632,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .whatwedo-list {
+    padding-bottom: 0;
+  }
+}
+
 .whatwedo-list_item {
   position: relative;
   width: 370px;
@@ -852,6 +859,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 0;
   }
 }
 
@@ -876,7 +884,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .list.clients {
-    padding-bottom: 94px;
+    padding-bottom: 0;
   }
 }
 
@@ -1352,6 +1360,8 @@ footer .tel {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    padding-left: 215px;
+    padding-right: 215px;
   }
 }
 
@@ -1365,6 +1375,16 @@ footer .tel {
             justify-content: space-between;
     margin-left: 80px;
     margin-right: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer_part {
+    margin-left: 0;
+    margin-right: 0;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -1400,6 +1420,12 @@ footer .tel {
   margin-bottom: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .adress.auth {
+    margin-bottom: 0;
+  }
+}
+
 .join-list-container {
   color: #ffffff;
   text-transform: uppercase;
@@ -1424,6 +1450,7 @@ footer .tel {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-align: start;
   }
 }
 
@@ -1481,12 +1508,15 @@ footer .tel {
 @media screen and (min-width: 768px) {
   .adress-container {
     margin-right: 70px;
+    text-align: start;
+    width: 231px;
   }
 }
 
 .subscribe-mailing {
   color: #ffffff;
   text-transform: uppercase;
+  text-align: start;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -1505,7 +1535,7 @@ footer .tel {
     width: 570px;
     height: 86px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 0;
   }
 }
 
@@ -1578,6 +1608,9 @@ footer .tel {
   .footer input[type="email"] {
     width: 358px;
     height: 50px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
