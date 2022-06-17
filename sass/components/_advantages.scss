@@ -101,6 +101,12 @@
     padding-bottom: 94px;
     padding-left: 0px;
     margin: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    &_item:not(:last-child) {
+      margin-bottom: 0;
+    }
 
     &_item {
       width: calc((100% - 2 * 15px) / 2);
@@ -122,9 +128,7 @@
     display: flex;
     justify-content: space-between;
 
-    padding-bottom: 94px;
-    padding-left: 0px;
-    margin: 0;
+    padding-bottom: 0;
 
     &_item {
       width: 270px;

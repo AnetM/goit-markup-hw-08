@@ -30,7 +30,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  // outline: 2px solid tomato;
   padding-bottom: 60px;
 
   @media screen and (min-width: 480px) {
@@ -38,7 +38,7 @@ body {
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 1600px;
+    max-width: 100vw;
     padding-left: 215px;
     padding-right: 215px;
     padding-bottom: 94px;
